@@ -1,0 +1,38 @@
+services:
+  # kaiwa-serverは後で設定するのでコメントアウト
+  # kaiwa-server:
+  #   build: 
+  #     context: ./kaiwa-ai
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - fish-speech
+  #   environment:
+  #     - FISH_SPEECH_URL=http://fish-speech:7860
+
+  fish-speech:
+    build: 
+      context: ./fish-speech
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+    environment:
+      - CUDA_ENABLED=true
+      - COMPILE=true
+      - HALF=false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    volumes:
+      # チェックポイントデータの永続化
+      - ./fish-speech/checkpoints:/opt/fish-speech/checkpoints
+      # カスタマイズしたentrypoint.shをオーバーライド
+      - ./fish-speech/entrypoint.sh:/opt/fish-speech/entrypoint.sh
+
+volumes:
+  checkpoints:
