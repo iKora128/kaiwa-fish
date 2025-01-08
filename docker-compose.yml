@@ -21,6 +21,7 @@ services:
       - CUDA_ENABLED=true
       - COMPILE=true
       - HALF=false
+      - CORS_ORIGINS=*
     deploy:
       resources:
         reservations:
