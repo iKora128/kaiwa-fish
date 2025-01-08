@@ -1,0 +1,21 @@
+[project]
+name = "kaiwa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "huggingface-hub>=0.25.1",
+    "mecab-python3>=1.0.9",
+    "nltk>=3.9.1",
+    "numpy==1.26.4",
+    "openai>=1.51.0",
+    "pydantic>=2.9.2",
+    "sentencepiece>=0.2.0",
+    "style-bert-vits2>=2.5.0",
+    "toml>=0.10.2",
+    "torch>=2.4.1",
+    "transformers>=4.45.1",
+    "uvicorn[standard]>=0.31.0",
+]

@@ -1,0 +1,58 @@
+# キャラクター設定ファイル
+# Fish-Speech用のリファレンス設定(2024/12/18)
+# 柔軟性を上げるために変数での共通化はしない(2024/10/7)
+
+[rinu]
+tts_model_path = "rinu"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/rinu.txt"
+
+[rinu_nanamori]
+tts_model_path = "rinu"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/rinu2nanamori.txt"
+
+[bannam]
+tts_model_path = "fate"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/bannam.txt"
+
+[sbi]
+tts_model_path = "uzuki"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/sbi.txt"
+
+[marui]
+tts_model_path = "uzuki"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/marui.txt"
+
+[nipro]
+tts_model_path = "uzuki"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/nipro.txt"
+
+[miyagi]
+tts_model_path = "miyagi"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/miyagi.txt"
+
+[miyagi_en]
+tts_model_path = "miyagi"
+language = "en"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/miyagi_en.txt"
+
+[tabist]
+tts_model_path = "rinu"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/tabist.txt"
+
+[testosterone]
+tts_model_path = "testosterone"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/testosterone.txt"
+
+[nurudesasara]
+tts_model_path = "nurudesasara"
+language = "ja"
+prompt_path = "/home/nagashimadaichi/dev/kaiwa/prompts/nurudesasara.txt"
